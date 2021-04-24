@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		BF5EB47A2634B171009737F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5EB4792634B171009737F9 /* AppDelegate.swift */; };
 		BF5EB47C2634B171009737F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5EB47B2634B171009737F9 /* SceneDelegate.swift */; };
-		BF5EB47E2634B171009737F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5EB47D2634B171009737F9 /* ViewController.swift */; };
+		BF5EB47E2634B171009737F9 /* EventsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5EB47D2634B171009737F9 /* EventsController.swift */; };
 		BF5EB4812634B171009737F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5EB47F2634B171009737F9 /* Main.storyboard */; };
 		BF5EB4832634B171009737F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF5EB4822634B171009737F9 /* Assets.xcassets */; };
 		BF5EB4862634B171009737F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5EB4842634B171009737F9 /* LaunchScreen.storyboard */; };
 		BF5EB4912634B171009737F9 /* FetchRewards_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5EB4902634B171009737F9 /* FetchRewards_ProjectTests.swift */; };
 		BF5EB49C2634B171009737F9 /* FetchRewards_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5EB49B2634B171009737F9 /* FetchRewards_ProjectUITests.swift */; };
+		BF5EB4B02634B334009737F9 /* DetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5EB4AF2634B334009737F9 /* DetailsController.swift */; };
+		BF5EB4B62634B3AB009737F9 /* SeatGeekAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5EB4B52634B3AB009737F9 /* SeatGeekAPI.swift */; };
+		BF5EB4BB2634B3D6009737F9 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5EB4BA2634B3D6009737F9 /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,7 @@
 		BF5EB4762634B171009737F9 /* FetchRewards_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchRewards_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5EB4792634B171009737F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF5EB47B2634B171009737F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BF5EB47D2634B171009737F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF5EB47D2634B171009737F9 /* EventsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsController.swift; sourceTree = "<group>"; };
 		BF5EB4802634B171009737F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF5EB4822634B171009737F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF5EB4852634B171009737F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,9 @@
 		BF5EB4972634B171009737F9 /* FetchRewards_ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchRewards_ProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5EB49B2634B171009737F9 /* FetchRewards_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRewards_ProjectUITests.swift; sourceTree = "<group>"; };
 		BF5EB49D2634B171009737F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF5EB4AF2634B334009737F9 /* DetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsController.swift; sourceTree = "<group>"; };
+		BF5EB4B52634B3AB009737F9 /* SeatGeekAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatGeekAPI.swift; sourceTree = "<group>"; };
+		BF5EB4BA2634B3D6009737F9 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +107,10 @@
 			children = (
 				BF5EB4792634B171009737F9 /* AppDelegate.swift */,
 				BF5EB47B2634B171009737F9 /* SceneDelegate.swift */,
-				BF5EB47D2634B171009737F9 /* ViewController.swift */,
-				BF5EB47F2634B171009737F9 /* Main.storyboard */,
+				BF5EB4B42634B39D009737F9 /* Network */,
+				BF5EB4AC2634B2DB009737F9 /* Model */,
+				BF5EB4AD2634B2E8009737F9 /* View */,
+				BF5EB4AE2634B2EE009737F9 /* Controller */,
 				BF5EB4822634B171009737F9 /* Assets.xcassets */,
 				BF5EB4842634B171009737F9 /* LaunchScreen.storyboard */,
 				BF5EB4872634B171009737F9 /* Info.plist */,
@@ -126,6 +134,39 @@
 				BF5EB49D2634B171009737F9 /* Info.plist */,
 			);
 			path = FetchRewards_ProjectUITests;
+			sourceTree = "<group>";
+		};
+		BF5EB4AC2634B2DB009737F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF5EB4BA2634B3D6009737F9 /* Event.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF5EB4AD2634B2E8009737F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF5EB47F2634B171009737F9 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF5EB4AE2634B2EE009737F9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF5EB47D2634B171009737F9 /* EventsController.swift */,
+				BF5EB4AF2634B334009737F9 /* DetailsController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BF5EB4B42634B39D009737F9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BF5EB4B52634B3AB009737F9 /* SeatGeekAPI.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +299,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF5EB47E2634B171009737F9 /* ViewController.swift in Sources */,
+				BF5EB4B02634B334009737F9 /* DetailsController.swift in Sources */,
+				BF5EB47E2634B171009737F9 /* EventsController.swift in Sources */,
+				BF5EB4B62634B3AB009737F9 /* SeatGeekAPI.swift in Sources */,
 				BF5EB47A2634B171009737F9 /* AppDelegate.swift in Sources */,
+				BF5EB4BB2634B3D6009737F9 /* Event.swift in Sources */,
 				BF5EB47C2634B171009737F9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
