@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF36879426360EF100FD344E /* JSONDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36879326360EF100FD344E /* JSONDownloader.swift */; };
+		BF36879926360F0E00FD344E /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36879826360F0E00FD344E /* Events.swift */; };
+		BF3687A2263629B500FD344E /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3687A1263629B500FD344E /* TableController.swift */; };
+		BF3687A7263629FE00FD344E /* DataConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3687A6263629FE00FD344E /* DataConfigurations.swift */; };
 		BF5EB47A2634B171009737F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5EB4792634B171009737F9 /* AppDelegate.swift */; };
 		BF5EB47C2634B171009737F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5EB47B2634B171009737F9 /* SceneDelegate.swift */; };
-		BF5EB47E2634B171009737F9 /* EventsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5EB47D2634B171009737F9 /* EventsController.swift */; };
+		BF5EB47E2634B171009737F9 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5EB47D2634B171009737F9 /* MainController.swift */; };
 		BF5EB4812634B171009737F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5EB47F2634B171009737F9 /* Main.storyboard */; };
 		BF5EB4832634B171009737F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF5EB4822634B171009737F9 /* Assets.xcassets */; };
 		BF5EB4862634B171009737F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5EB4842634B171009737F9 /* LaunchScreen.storyboard */; };
@@ -38,10 +42,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF36879326360EF100FD344E /* JSONDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDownloader.swift; sourceTree = "<group>"; };
+		BF36879826360F0E00FD344E /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		BF3687A1263629B500FD344E /* TableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
+		BF3687A6263629FE00FD344E /* DataConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConfigurations.swift; sourceTree = "<group>"; };
 		BF5EB4762634B171009737F9 /* FetchRewards_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchRewards_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5EB4792634B171009737F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF5EB47B2634B171009737F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BF5EB47D2634B171009737F9 /* EventsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsController.swift; sourceTree = "<group>"; };
+		BF5EB47D2634B171009737F9 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		BF5EB4802634B171009737F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF5EB4822634B171009737F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF5EB4852634B171009737F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -107,6 +115,7 @@
 			children = (
 				BF5EB4792634B171009737F9 /* AppDelegate.swift */,
 				BF5EB47B2634B171009737F9 /* SceneDelegate.swift */,
+				BF7C6068263666FC00FAA8E1 /* Extensions */,
 				BF5EB4B42634B39D009737F9 /* Network */,
 				BF5EB4AC2634B2DB009737F9 /* Model */,
 				BF5EB4AD2634B2E8009737F9 /* View */,
@@ -140,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				BF5EB4BA2634B3D6009737F9 /* Event.swift */,
+				BF36879826360F0E00FD344E /* Events.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -155,8 +165,10 @@
 		BF5EB4AE2634B2EE009737F9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BF5EB47D2634B171009737F9 /* EventsController.swift */,
+				BF3687A6263629FE00FD344E /* DataConfigurations.swift */,
+				BF5EB47D2634B171009737F9 /* MainController.swift */,
 				BF5EB4AF2634B334009737F9 /* DetailsController.swift */,
+				BF3687A1263629B500FD344E /* TableController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -165,8 +177,16 @@
 			isa = PBXGroup;
 			children = (
 				BF5EB4B52634B3AB009737F9 /* SeatGeekAPI.swift */,
+				BF36879326360EF100FD344E /* JSONDownloader.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		BF7C6068263666FC00FAA8E1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,9 +319,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF36879426360EF100FD344E /* JSONDownloader.swift in Sources */,
 				BF5EB4B02634B334009737F9 /* DetailsController.swift in Sources */,
-				BF5EB47E2634B171009737F9 /* EventsController.swift in Sources */,
+				BF5EB47E2634B171009737F9 /* MainController.swift in Sources */,
+				BF3687A2263629B500FD344E /* TableController.swift in Sources */,
+				BF3687A7263629FE00FD344E /* DataConfigurations.swift in Sources */,
 				BF5EB4B62634B3AB009737F9 /* SeatGeekAPI.swift in Sources */,
+				BF36879926360F0E00FD344E /* Events.swift in Sources */,
 				BF5EB47A2634B171009737F9 /* AppDelegate.swift in Sources */,
 				BF5EB4BB2634B3D6009737F9 /* Event.swift in Sources */,
 				BF5EB47C2634B171009737F9 /* SceneDelegate.swift in Sources */,
