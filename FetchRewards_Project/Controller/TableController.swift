@@ -32,8 +32,8 @@ class TableController: UITableViewCell {
         } else {
             favoriteLabel.isHidden = true
         }
-        
-        eventImage.image = UIImage(systemName: "ticket")
+//        
+//        eventImage.image = UIImage(systemName: "ticket")
         titleLabel.text = view.title
         venueLabel.text = view.location
         

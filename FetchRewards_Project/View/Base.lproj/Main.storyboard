@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -36,10 +37,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="175"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1KW-VC-qqt">
-                                            <rect key="frame" x="41" y="16" width="121" height="142"/>
-                                            <color key="tintColor" systemColor="systemIndigoColor"/>
-                                        </imageView>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="w5d-or-Xqx">
                                             <rect key="frame" x="180" y="40" width="209" height="91"/>
                                             <subviews>
@@ -67,17 +64,24 @@
                                             <rect key="frame" x="20" y="13" width="41" height="28"/>
                                             <color key="tintColor" systemColor="systemPinkColor"/>
                                         </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1KW-VC-qqt">
+                                            <rect key="frame" x="41" y="58" width="121" height="58"/>
+                                            <color key="tintColor" systemColor="systemIndigoColor"/>
+                                            <imageReference key="image" image="ticket" catalog="system" symbolScale="small"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="200" scale="small"/>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="1KW-VC-qqt" firstAttribute="leading" secondItem="38q-g8-Eou" secondAttribute="leading" constant="41" id="4Sb-4J-ZTf"/>
                                         <constraint firstAttribute="bottom" secondItem="bnY-yQ-8Eu" secondAttribute="bottom" constant="134" id="8q2-KL-WaI"/>
-                                        <constraint firstAttribute="bottom" secondItem="1KW-VC-qqt" secondAttribute="bottom" constant="18" id="F8x-6p-zm7"/>
                                         <constraint firstAttribute="trailing" secondItem="w5d-or-Xqx" secondAttribute="trailing" constant="25" id="HBp-qE-gYt"/>
                                         <constraint firstItem="w5d-or-Xqx" firstAttribute="leading" secondItem="38q-g8-Eou" secondAttribute="leading" constant="180" id="L2y-7D-Wbk"/>
                                         <constraint firstItem="bnY-yQ-8Eu" firstAttribute="leading" secondItem="38q-g8-Eou" secondAttribute="leading" constant="20" symbolic="YES" id="Mod-WF-5id"/>
-                                        <constraint firstItem="1KW-VC-qqt" firstAttribute="top" secondItem="38q-g8-Eou" secondAttribute="top" constant="15.5" id="T7X-v6-ASp"/>
+                                        <constraint firstItem="1KW-VC-qqt" firstAttribute="top" secondItem="38q-g8-Eou" secondAttribute="top" constant="18" id="Paz-IC-5Tj"/>
+                                        <constraint firstAttribute="trailing" secondItem="1KW-VC-qqt" secondAttribute="trailing" constant="252" id="W22-m5-TMQ"/>
                                         <constraint firstAttribute="trailing" secondItem="bnY-yQ-8Eu" secondAttribute="trailing" constant="353" id="Wqc-xN-FGo"/>
+                                        <constraint firstAttribute="bottom" secondItem="1KW-VC-qqt" secondAttribute="bottom" constant="21.5" id="rxU-mZ-2eq"/>
                                         <constraint firstItem="w5d-or-Xqx" firstAttribute="top" secondItem="38q-g8-Eou" secondAttribute="top" constant="40" id="syy-0I-vqw"/>
-                                        <constraint firstItem="1KW-VC-qqt" firstAttribute="leading" secondItem="38q-g8-Eou" secondAttribute="leading" constant="41" id="tH2-0u-Y6l"/>
                                         <constraint firstItem="bnY-yQ-8Eu" firstAttribute="top" secondItem="38q-g8-Eou" secondAttribute="top" constant="11.5" id="vfK-WD-Jm1"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -232,6 +236,7 @@
     <resources>
         <image name="heart" catalog="system" width="128" height="109"/>
         <image name="suit.heart.fill" catalog="system" width="128" height="109"/>
+        <image name="ticket" catalog="system" width="128" height="84"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
