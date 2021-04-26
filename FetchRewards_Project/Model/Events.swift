@@ -4,7 +4,6 @@
 //
 //  Created by Connie Tran on 4/25/21.
 //
-
 import Foundation
 
 class Events {

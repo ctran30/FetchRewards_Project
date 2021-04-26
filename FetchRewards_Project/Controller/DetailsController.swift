@@ -30,6 +30,7 @@ class DetailsController: UIViewController {
             favoritesButton.setImage(UIImage.init(systemName: "heart"), for: .normal)
         }
         
+        eventImage.image = UIImage(systemName: "ticket")
         titleLabel.text = event?.title
         venueLabel.text = event?.venue
         addressLabel.text = event?.address

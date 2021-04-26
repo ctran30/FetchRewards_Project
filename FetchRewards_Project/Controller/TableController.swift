@@ -4,7 +4,6 @@
 //
 //  Created by Connie Tran on 4/25/21.
 //
-
 import Foundation
 import UIKit
 
@@ -34,7 +33,7 @@ class TableController: UITableViewCell {
             favoriteLabel.isHidden = true
         }
         
-        //eventImage.
+        eventImage.image = UIImage(systemName: "ticket")
         titleLabel.text = view.title
         venueLabel.text = view.location
         
