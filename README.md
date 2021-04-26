@@ -17,5 +17,6 @@ These details allow the user to effortlessly use the application and to keep it 
 Although the application works fine, there was an error that keep showing in the console output: 'nw_protocol_get_quic_image_block_invoke dlopen libquic failed'.
 This error tended to show up when fetching images from the API (and occassionally when fetching events themselves).
 This hindered the application from fetching from the API and displaying on the UITableView. 
+
 I eventually removed the fetching of images and replaced UIImageView with a ticket, to showcase events on the view. 
 Unfortunately, the error persists but the events are fetched correctly from SeatGeekAPI. 
