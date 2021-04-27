@@ -8,7 +8,7 @@ These details allow the user to effortlessly use the application and to keep it 
 
 # How to Run
 
-1. Clone the repo and open file 'FetchRewards_Project.xcodeproj' on XCode.
+1. Clone the repo and open file 'FetchRewards_Project.xcworkspace' on XCode.
 2. Build and run the application on a simulation of iPhone 11.
 3. Once downloaded and installed on the simulation, browse through events.
 
