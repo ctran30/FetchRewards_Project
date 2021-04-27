@@ -1,0 +1,6 @@
+framework module Pods_FetchRewards_Project_FetchRewards_ProjectUITests {
+  umbrella header "Pods-FetchRewards_Project-FetchRewards_ProjectUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
