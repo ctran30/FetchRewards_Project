@@ -18,6 +18,8 @@ class Event {
     var address: String
     var extended: String
     
+    //var performers: [Performer]
+    
     init (id: Int, type: String, title: String, short_title: String, location: String, datetime: String, venue: String, address: String, extended: String) {
         self.id = id
         self.type = type
@@ -29,5 +31,7 @@ class Event {
         self.venue = venue
         self.address = address
         self.extended = extended
+        
+        //self.performers = performers
     }
 }

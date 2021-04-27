@@ -6,6 +6,7 @@
 //
 import Foundation
 import UIKit
+import SDWebImage
 
 class TableController: UITableViewCell {
     
@@ -32,8 +33,9 @@ class TableController: UITableViewCell {
         } else {
             favoriteLabel.isHidden = true
         }
-//        
-//        eventImage.image = UIImage(systemName: "ticket")
+
+        eventImage.image = UIImage(systemName: "ticket")
+//        eventImage.sd_setImage(with: URL(string: view.performers[0].image))
         titleLabel.text = view.title
         venueLabel.text = view.location
         
@@ -57,6 +59,7 @@ struct TableDetails {
     var title: String
     var location: String
     var datetime: String
+//    var performers: [Performer]
     
     init (id: Int, type: String, title: String, location: String, datetime: String) {
         self.id = id
@@ -64,5 +67,6 @@ struct TableDetails {
         self.title = title
         self.location = location
         self.datetime = datetime
+       // self.performers = performers
     }
 }

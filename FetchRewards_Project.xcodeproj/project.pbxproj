@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		71A85C4D8D1578D6822D572F /* Pods_FetchRewards_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F86C90C5036010F08659C2 /* Pods_FetchRewards_Project.framework */; };
 		7685C74F4D419344F2E05459 /* Pods_FetchRewards_ProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 478ED2B73C859F1374FAF9D2 /* Pods_FetchRewards_ProjectTests.framework */; };
+		BF0C36372637891100C400C6 /* Performer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0C36362637891100C400C6 /* Performer.swift */; };
+		BF0C363C2637892500C400C6 /* Performers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0C363B2637892500C400C6 /* Performers.swift */; };
 		BF36879426360EF100FD344E /* JSONDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36879326360EF100FD344E /* JSONDownloader.swift */; };
 		BF36879926360F0E00FD344E /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36879826360F0E00FD344E /* Events.swift */; };
 		BF3687A2263629B500FD344E /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3687A1263629B500FD344E /* TableController.swift */; };
@@ -53,6 +55,8 @@
 		902830F8AA6D53B2C6C27705 /* Pods-FetchRewards_Project-FetchRewards_ProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FetchRewards_Project-FetchRewards_ProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-FetchRewards_Project-FetchRewards_ProjectUITests/Pods-FetchRewards_Project-FetchRewards_ProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		98ADCBFB460FF0051AF83D63 /* Pods-FetchRewards_Project-FetchRewards_ProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FetchRewards_Project-FetchRewards_ProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-FetchRewards_Project-FetchRewards_ProjectUITests/Pods-FetchRewards_Project-FetchRewards_ProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AC7A6C2E0CD9B6A8A06A5093 /* Pods-FetchRewards_Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FetchRewards_Project.release.xcconfig"; path = "Target Support Files/Pods-FetchRewards_Project/Pods-FetchRewards_Project.release.xcconfig"; sourceTree = "<group>"; };
+		BF0C36362637891100C400C6 /* Performer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Performer.swift; sourceTree = "<group>"; };
+		BF0C363B2637892500C400C6 /* Performers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Performers.swift; sourceTree = "<group>"; };
 		BF36879326360EF100FD344E /* JSONDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDownloader.swift; sourceTree = "<group>"; };
 		BF36879826360F0E00FD344E /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
 		BF3687A1263629B500FD344E /* TableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
@@ -180,6 +184,8 @@
 			children = (
 				BF5EB4BA2634B3D6009737F9 /* Event.swift */,
 				BF36879826360F0E00FD344E /* Events.swift */,
+				BF0C36362637891100C400C6 /* Performer.swift */,
+				BF0C363B2637892500C400C6 /* Performers.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -467,12 +473,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF0C363C2637892500C400C6 /* Performers.swift in Sources */,
 				BF36879426360EF100FD344E /* JSONDownloader.swift in Sources */,
 				BF5EB4B02634B334009737F9 /* DetailsController.swift in Sources */,
 				BF5EB47E2634B171009737F9 /* MainController.swift in Sources */,
 				BF3687A2263629B500FD344E /* TableController.swift in Sources */,
 				BF3687A7263629FE00FD344E /* DataConfigurations.swift in Sources */,
 				BF5EB4B62634B3AB009737F9 /* SeatGeekAPI.swift in Sources */,
+				BF0C36372637891100C400C6 /* Performer.swift in Sources */,
 				BF36879926360F0E00FD344E /* Events.swift in Sources */,
 				BF5EB47A2634B171009737F9 /* AppDelegate.swift in Sources */,
 				BF5EB4BB2634B3D6009737F9 /* Event.swift in Sources */,

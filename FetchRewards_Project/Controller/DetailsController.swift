@@ -19,6 +19,7 @@ class DetailsController: UIViewController {
     @IBOutlet weak var extendedLabel: UILabel!
     
     var event: Event?
+    var performer: Performer?
     
     override func viewDidLoad() {
         let defaults = UserDefaults.standard
@@ -30,6 +31,9 @@ class DetailsController: UIViewController {
             favoritesButton.setImage(UIImage.init(systemName: "heart"), for: .normal)
         }
         
+//        if let image = event?.performers[0].image {
+//            eventImage.sd_setImage(with: URL(string: image))
+//        }
         eventImage.image = UIImage(systemName: "ticket")
         titleLabel.text = event?.title
         venueLabel.text = event?.venue

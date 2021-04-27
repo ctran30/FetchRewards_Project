@@ -26,8 +26,14 @@ class MainController: UITableViewController, UISearchBarDelegate {
         var fetchedEvents: [Event] = []
         api.getEvents() { res, error in
             guard let res = res else { return }
-            self.reload(events: res.events)
+            self.reloadEvents(events: res.events)
         }
+        
+//        var fetchedPerformers: [Performer] = []
+//        api.getImage() { res, error in
+//            guard let res = res else { return }
+//            self.reloadPerformers(performers: res.performers)
+//        }
         return DataSource(events: fetchedEvents, tableView: self.tableView)
     }()
     
@@ -47,13 +53,19 @@ class MainController: UITableViewController, UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         api.getSearch(searchText) { res, error in
             guard let res = res else { return }
-            self.reload(events: res.events)
+            self.reloadEvents(events: res.events)
         }
     }
     
-    func reload(events: [Event]) {
-        dataSource.update(with: events)
+    func reloadEvents(events: [Event]) {
+        dataSource.updateEvents(with: events)
         tableView.dataSource = dataSource
         tableView.reloadData()
     }
+    
+//    func reloadPerformers(performers: [Performer]) {
+//        dataSource.updatePerformers(with: performers)
+//        tableView.dataSource = dataSource
+//        tableView.reloadData()
+//    }
 }

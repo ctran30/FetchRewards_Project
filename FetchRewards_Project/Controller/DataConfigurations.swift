@@ -9,17 +9,23 @@ import UIKit
 
 class DataSource: NSObject, UITableViewDataSource {
     private var events: [Event]
+    //private var performers: [Performer]
     let tableView: UITableView
     
     init (events: [Event], tableView: UITableView) {
         self.events = events
+        //self.performers = performers
         self.tableView = tableView
         super.init()
     }
     
-    func update (with events: [Event]) {
+    func updateEvents (with events: [Event]) {
         self.events = events
     }
+    
+//    func updatePerformers (with performers: [Performer]) {
+//        self.performers = performers
+//    }
     
     func sections(in tableView: UITableView) -> Int {
         return 1

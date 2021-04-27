@@ -28,6 +28,7 @@ extension Events {
             static let venueName = "name"
             static let address = "address"
             static let extended = "extended_address"
+            //static let performers = "performers"
         }
         
         var events: [Event] = []
@@ -47,6 +48,8 @@ extension Events {
             guard let name = venue[queries.venueName] as? String else { return nil }
             guard let address = venue[queries.address] as? String else { return nil }
             guard let extended = venue[queries.extended] as? String else { return nil }
+            
+            //guard let performers = each[queries.performers] as? [Performer] else { return nil }
             
             events.append(Event(id: id, type: type, title: title, short_title: short_title, location: location, datetime: datetime, venue: name, address: address, extended: extended))
         }

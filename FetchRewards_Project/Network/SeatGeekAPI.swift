@@ -45,8 +45,23 @@ class SeatGeekAPI {
             let events = Events(json: res)
             completion(events, nil)
         }
-            
+        
     }
+    
+    //API call for image
+    func getImage (completion: @escaping (Performers?, String?) -> Void) {
+        let url = endpointURL + "performers?client_id=" + clientID
+        fetchData (with: url) { res, err in
+            guard let res = res else {
+                completion(nil, err)
+                return
+            }
+            
+            let performers = Performers(json: res)
+            completion(performers, nil)
+        }
+    }
+    
     
     typealias Results = [[String: Any]]
     
