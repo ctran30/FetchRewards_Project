@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SDWebImage
 
 class DetailsController: UIViewController {
     
@@ -19,7 +20,7 @@ class DetailsController: UIViewController {
     @IBOutlet weak var extendedLabel: UILabel!
     
     var event: Event?
-    var performer: Performer?
+    //var performer: Performer?
     
     override func viewDidLoad() {
         let defaults = UserDefaults.standard
